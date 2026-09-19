@@ -4,78 +4,155 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="The Coffee Cracks Academy: un espacio para descubrir el café, aprender sus técnicas y comenzar tu camino como barista." />
+    <link rel="icon" type="image/jpeg" href="Asset/CoffeeCracks%20ico.jpg" />
     <title>The Coffee Cracks Academy | Aprende desde el origen</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
   <body class="bg-[#070809] font-sans text-stone-100 antialiased">
     <a href="#contenido" class="sr-only focus:not-sr-only focus:absolute focus:z-10 focus:bg-[#111415] focus:p-4">Saltar al contenido</a>
-    <header class="border-b border-[#946037]/35">
-      <div class="mx-auto flex max-w-6xl flex-col gap-5 px-6 py-6 sm:flex-row sm:items-center sm:justify-between">
-        <a href="#inicio" class="text-xl font-bold tracking-tight text-white">Coffee <span class="text-[#ff9417]">Cracks</span><span class="block text-xs font-medium uppercase tracking-[0.25em] text-[#20dadd]">Academy</span></a>
-        <nav aria-label="Navegación principal" class="flex flex-wrap gap-6 text-sm font-medium">
+    <header class="header relative z-20 border-b border-[#946037]/35 bg-[#070809]">
+      <div class="header__contenido mx-auto grid max-w-[1600px] items-center justify-items-center gap-2 px-4 py-2 sm:px-6 lg:grid-cols-[1fr_auto_1fr] lg:px-8">
+        <a href="#inicio" class="header__nombre hidden justify-self-start text-xl font-bold tracking-tight text-white lg:block">Coffee <span class="text-[#ff9417]">Cracks</span><span class="block text-xs font-medium uppercase tracking-[0.25em] text-[#20dadd]">Academy</span></a>
+        <a href="#inicio" aria-label="Coffee Cracks Academy, ir al inicio" class="header__icono flex h-20 w-24 items-center justify-center focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#20dadd] lg:h-20 lg:w-28">
+          <img src="Asset/Coffee%20Crack%27s%20Academy.png" alt="Coffee Cracks Academy, logo con letras azules" class="h-full w-full object-contain" />
+        </a>
+        <nav aria-label="Navegación principal" class="header__navegacion flex flex-wrap justify-center gap-5 text-sm font-medium lg:justify-self-end">
           <a href="#inicio" class="rounded hover:text-[#20dadd] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#20dadd]">Inicio</a>
           <a href="#nosotros" class="rounded hover:text-[#20dadd] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#20dadd]">La academia</a>
           <a href="#cursos" class="rounded hover:text-[#20dadd] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#20dadd]">Cursos</a>
+          <a href="#contacto" class="rounded hover:text-[#20dadd] focus-visible:outline-2 focus-visible:outline-offset-4">Contacto</a>
         </nav>
       </div>
     </header>
 
     <main id="contenido">
-      <section id="inicio" aria-labelledby="titulo" class="mx-auto grid max-w-6xl items-center gap-12 px-6 py-20 md:grid-cols-2 md:py-28">
-        <div>
-          <p class="mb-5 text-xs font-bold uppercase tracking-[0.2em] text-[#ff9417]">Del origen a la taza</p>
-          <h1 id="titulo" class="max-w-xl text-5xl font-semibold leading-tight tracking-tight sm:text-6xl">El buen café<br />empieza con<br /><span class="font-serif italic text-[#20dadd]">aprender.</span></h1>
-          <p class="mt-6 max-w-md text-lg leading-relaxed text-stone-300">Un espacio para explorar tu pasión por el café y dar tus primeros pasos en el mundo del barismo.</p>
-          <a href="#cursos" class="mt-8 inline-flex rounded-full bg-[#ff9417] px-6 py-3 text-sm font-semibold text-stone-950 transition hover:bg-[#ffad4f] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#20dadd]">Explorar los cursos <span aria-hidden="true" class="ml-4">↗</span></a>
-        </div>
-        <figure class="overflow-hidden rounded-3xl border border-[#946037]/35 bg-[#070809]">
-          <img src="Asset/Coffee%20Crack%27s%20Academy.jpg" alt="The Coffee Cracks Academy: logo con un grano de café y letras turquesa y naranja" width="1600" height="896" fetchpriority="high" class="block h-auto w-full" />
-          <figcaption class="border-t border-[#946037]/35 px-6 py-5 text-center text-sm text-stone-300">Origen. Técnica. Pasión.</figcaption>
-        </figure>
-      </section>
-
-      <section id="nosotros" aria-labelledby="titulo-nosotros" class="border-y border-[#946037]/35 bg-[#111415]">
-        <div class="mx-auto grid max-w-6xl gap-6 px-6 py-14 md:grid-cols-2 md:gap-12">
-          <h2 id="titulo-nosotros" class="text-3xl font-semibold tracking-tight">Una pasión que se comparte.</h2>
-          <p class="max-w-lg leading-relaxed text-stone-300">Somos una academia dedicada a la cultura del café. Queremos acercarte a sus orígenes, sus aromas y sus métodos de preparación, para que descubras todo lo que hay detrás de una buena taza.</p>
-        </div>
-      </section>
-
-      <section id="cursos" aria-labelledby="titulo-cursos" class="mx-auto max-w-6xl px-6 py-16">
-        <div class="mb-8 flex flex-wrap items-end justify-between gap-4">
-          <div>
-            <p class="mb-3 text-xs font-bold uppercase tracking-[0.2em] text-[#ff9417]">Tu camino comienza aquí</p>
-            <h2 id="titulo-cursos" class="text-3xl font-semibold tracking-tight">Aprende a tu ritmo.</h2>
+      <section id="inicio" aria-labelledby="titulo" class="inicio relative isolate overflow-hidden">
+        <img src="Asset/coffee-cracks-academy-banner.png" alt="" width="1672" height="941" fetchpriority="high" class="inicio__fondo pointer-events-none absolute inset-0 -z-20 h-full w-full scale-105 object-cover object-center blur-[3px]" />
+        <div aria-hidden="true" class="inicio__sombra pointer-events-none absolute inset-0 -z-10 bg-black/35"></div>
+        <div class="inicio__contenido mx-auto max-w-[1600px] px-4 sm:px-6 lg:px-8 pt-20 pb-12 sm:pt-24 sm:pb-16 md:py-24">
+          <div class="inicio__tarjeta max-w-xl overflow-hidden rounded-3xl border border-[#946037]/60 bg-[#070809]/85 shadow-2xl">
+            <div class="p-6 sm:p-10">
+              <p class="mb-5 text-xs font-bold uppercase tracking-[0.2em] text-[#ff9417]">Del origen a la taza</p>
+              <h1 id="titulo" class="text-4xl font-semibold leading-tight tracking-tight sm:text-6xl">El buen café<br />empieza con<br /><span class="font-serif italic text-[#20dadd]">aprender.</span></h1>
+              <p class="mt-6 max-w-md text-lg leading-relaxed text-stone-200">Un espacio para explorar tu pasión por el café y dar tus primeros pasos en el mundo del barismo.</p>
+              <div class="mt-8 flex justify-center"><a href="#cursos" class="inline-flex rounded-full bg-[#ff9417] px-6 py-3 text-sm font-semibold text-stone-950 transition hover:bg-[#ffad4f] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#20dadd]">Explorar los cursos</a></div>
+            </div>
           </div>
-          <span class="rounded-full border border-[#946037]/60 px-4 py-2 text-xs font-medium text-stone-300">Próximamente</span>
-        </div>
-        <div class="grid gap-5 md:grid-cols-3">
-          <article class="rounded-2xl border border-[#946037]/35 bg-[#111415] p-7">
-            <span aria-hidden="true" class="text-sm font-medium text-[#ff9417]">01 /</span>
-            <h3 class="mt-8 text-xl font-semibold">Introducción al café</h3>
-            <p class="mt-3 text-sm leading-relaxed text-stone-300">Descubre el recorrido del grano y los fundamentos de la cultura cafetera.</p>
-          </article>
-          <article class="rounded-2xl border border-[#946037]/35 bg-[#111415] p-7">
-            <span aria-hidden="true" class="text-sm font-medium text-[#ff9417]">02 /</span>
-            <h3 class="mt-8 text-xl font-semibold">Barismo básico</h3>
-            <p class="mt-3 text-sm leading-relaxed text-stone-300">Conoce las bases del espresso, la molienda y la preparación de bebidas.</p>
-          </article>
-          <article class="rounded-2xl border border-[#946037]/35 bg-[#111415] p-7">
-            <span aria-hidden="true" class="text-sm font-medium text-[#ff9417]">03 /</span>
-            <h3 class="mt-8 text-xl font-semibold">Métodos de filtrado</h3>
-            <p class="mt-3 text-sm leading-relaxed text-stone-300">Explora otras formas de preparar café y reconocer sus sabores.</p>
-          </article>
         </div>
       </section>
-    </main>
 
-    <footer class="border-t border-[#946037]/35">
-      <div class="mx-auto flex max-w-6xl flex-col gap-3 px-6 py-7 text-sm text-stone-400 sm:flex-row sm:justify-between">
-        <p class="font-semibold text-stone-100">The Coffee Cracks Academy.</p>
-        <p>Aprender. Preparar. Compartir.</p>
+      <section id="nosotros" aria-labelledby="titulo-nosotros" class="nosotros border-y border-[#946037]/35 bg-[#111415]">
+        <div class="nosotros__contenido mx-auto grid max-w-[1600px] items-center gap-10 px-4 py-16 sm:px-6 lg:grid-cols-2 lg:gap-20 lg:px-8 lg:py-24">
+          <figure class="nosotros__foto mx-auto w-full max-w-lg overflow-hidden rounded-3xl border border-[#946037]/40 shadow-2xl">
+            <img src="Asset/academia-barismo-frontal.png" alt="Máquina de espresso vista de frente, jarra y taza de Coffee Cracks con un café de arte latte en primer plano" width="1122" height="1402" loading="lazy" class="block h-auto w-full" />
+          </figure>
+          <div class="nosotros__texto max-w-2xl">
+            <p class="mb-5 text-xs font-bold uppercase tracking-[0.2em] text-[#ff9417]">Acerca de nosotros</p>
+            <h2 id="titulo-nosotros" class="text-4xl font-semibold leading-tight tracking-tight sm:text-5xl lg:text-6xl">Una pasión<br />que se <span class="font-serif italic text-[#20dadd]">comparte.</span></h2>
+            <div class="mt-8 h-1 w-16 rounded-full bg-[#ff9417]" aria-hidden="true"></div>
+            <p class="mt-8 text-xl leading-relaxed text-stone-200 sm:text-2xl">Somos una academia de Barismo y Calidad del café, enfocados en enseñar lo mejor.</p>
+            <p class="mt-6 text-lg leading-relaxed text-stone-300">Sumado a ello, compartimos conocimientos de trabajo en equipo y liderazgo para fortalecer las competencias de su cafetería.</p>
+            <ul class="mt-8 flex flex-wrap gap-3 text-sm text-[#20dadd]" aria-label="Áreas de formación">
+              <li class="rounded-full border border-[#20dadd]/30 px-4 py-2">Barismo</li>
+              <li class="rounded-full border border-[#20dadd]/30 px-4 py-2">Calidad del café</li>
+              <li class="rounded-full border border-[#20dadd]/30 px-4 py-2">Trabajo en equipo</li>
+              <li class="rounded-full border border-[#20dadd]/30 px-4 py-2">Liderazgo</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="cursos" aria-labelledby="titulo-cursos" class="cursos mx-auto max-w-[1600px] px-4 sm:px-6 lg:px-8 py-16">
+        <div class="cursos__encabezado mb-8">
+          <p class="mb-3 text-xs font-bold uppercase tracking-[0.2em] text-[#ff9417]">Curso presencial · 2026–2027</p>
+          <h2 id="titulo-cursos" class="text-3xl font-semibold tracking-tight sm:text-4xl">Conviértete en un barista.</h2>
+          <p class="mt-4 max-w-2xl leading-relaxed text-stone-300">3 clases presenciales y 24 horas de capacitación. Cada clase tiene una duración de 8 horas, con un máximo de 5 participantes por día.</p>
+          <p class="mt-3 text-sm text-[#20dadd]">Impartido por Nelson Ramírez</p>
+        </div>
+        <div class="cursos__lista grid gap-5 md:grid-cols-3">
+          <article class="curso flex flex-col rounded-2xl border border-[#946037]/50 bg-[#111415] p-6 lg:p-7">
+            <p class="curso__numero text-xs font-bold uppercase tracking-[0.16em] text-[#ff9417]">Clase 1</p>
+            <h3 class="curso__titulo mt-4 text-xl font-semibold">Fundamentos del barismo</h3>
+            <p class="curso__fecha mt-4 font-medium text-[#20dadd]"><time datetime="2026-12-12">12</time> y <time datetime="2026-12-13">13 de diciembre de 2026</time></p>
+            <p class="mt-2 text-xs text-stone-400">8 horas de capacitación por día</p>
+            <ul class="curso__temas my-6 list-disc space-y-2 pl-5 text-sm leading-relaxed text-stone-300 marker:text-[#ff9417]">
+              <li>Introducción al Barismo</li>
+              <li>Manejo del equipo</li>
+              <li>Calibración para Espresso</li>
+            </ul>
+            <p class="curso__precio mt-auto border-t border-white/10 pt-5 text-2xl font-semibold">L 1,800 <span class="block mt-1 text-xs font-normal text-stone-400">Precio individual · Clase 1</span></p>
+          </article>
+          <article class="curso flex flex-col rounded-2xl border border-[#946037]/50 bg-[#111415] p-6 lg:p-7">
+            <p class="curso__numero text-xs font-bold uppercase tracking-[0.16em] text-[#ff9417]">Clase 2</p>
+            <h3 class="curso__titulo mt-4 text-xl font-semibold">Espresso y bebidas</h3>
+            <p class="curso__fecha mt-4 font-medium text-[#20dadd]"><time datetime="2027-01-09">9</time> y <time datetime="2027-01-10">10 de enero de 2027</time></p>
+            <p class="mt-2 text-xs text-stone-400">8 horas de capacitación por día</p>
+            <ul class="curso__temas my-6 list-disc space-y-2 pl-5 text-sm leading-relaxed text-stone-300 marker:text-[#ff9417]">
+              <li>Bebidas a base de Espresso</li>
+              <li>Bebidas frutales</li>
+              <li>Smoothies</li>
+            </ul>
+            <p class="curso__precio mt-auto border-t border-white/10 pt-5 text-2xl font-semibold">L 1,500 <span class="block mt-1 text-xs font-normal text-stone-400">Precio individual · Clase 2</span></p>
+          </article>
+          <article class="curso flex flex-col rounded-2xl border border-[#946037]/50 bg-[#111415] p-6 lg:p-7">
+            <p class="curso__numero text-xs font-bold uppercase tracking-[0.16em] text-[#ff9417]">Clase 3</p>
+            <h3 class="curso__titulo mt-4 text-xl font-semibold">Filtrado y arte latte</h3>
+            <p class="curso__fecha mt-4 font-medium text-[#20dadd]"><time datetime="2027-02-27">27</time> y <time datetime="2027-02-28">28 de febrero de 2027</time></p>
+            <p class="mt-2 text-xs text-stone-400">8 horas de capacitación por día</p>
+            <ul class="curso__temas my-6 list-disc space-y-2 pl-5 text-sm leading-relaxed text-stone-300 marker:text-[#ff9417]">
+              <li>Métodos de filtrado</li>
+              <li>Arte Latte — Clase 1</li>
+            </ul>
+            <p class="curso__precio mt-auto border-t border-white/10 pt-5 text-2xl font-semibold">L 1,300 <span class="block mt-1 text-xs font-normal text-stone-400">Precio individual · Clase 3</span></p>
+          </article>
+        </div>
+        <div class="cursos__paquete mt-6 flex flex-col gap-6 rounded-2xl border border-[#ff9417]/50 bg-[#ff9417]/10 p-6 sm:flex-row sm:items-center sm:justify-between lg:p-8">
+          <div>
+            <h3 class="text-lg font-semibold">Precio especial por las 3 clases</h3>
+            <p class="mt-2 text-4xl font-bold text-[#ff9417]">L 4,000</p>
+            <p class="mt-3 max-w-xl text-sm leading-relaxed text-stone-300">Los precios individuales aplican cuando se toma cada clase por separado. Cupos limitados: máximo 5 personas por día.</p>
+          </div>
+          <a href="mailto:nramirezpersonal@yahoo.com?subject=Consulta%20sobre%20el%20curso%20de%20barismo%202026-2027" class="cursos__consulta inline-flex min-h-11 shrink-0 items-center justify-center rounded-full bg-[#ff9417] px-6 py-3 text-sm font-semibold text-stone-950 hover:bg-[#ffad4f] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#20dadd]">Consultar y reservar</a>
+        </div>
+      </section>
+</main>
+
+    <footer id="contacto" class="footer border-t border-white/25 border-b-4 border-b-[#bf9363] bg-black text-white">
+      <div class="footer__contenido mx-auto grid max-w-[1600px] gap-10 px-4 sm:px-6 lg:px-8 py-16 sm:grid-cols-2 lg:grid-cols-[1fr_1fr_1.2fr_1.5fr] lg:gap-12 lg:py-24">
+        <nav aria-labelledby="footer-nosotros" class="footer__columna">
+          <h2 id="footer-nosotros" class="mb-5 text-lg font-bold">Sobre Nosotros</h2>
+          <ul class="space-y-3 text-sm">
+            <li><a href="#nosotros" class="hover:text-[#20dadd] focus-visible:outline-2 focus-visible:outline-offset-4">La academia</a></li>
+            <li><a href="https://www.google.com/maps/search/?api=1&amp;query=Colonia%20Las%20Brisas%2C%20San%20Pedro%20Sula%2C%20Honduras" target="_blank" rel="noopener noreferrer" class="hover:text-[#20dadd] focus-visible:outline-2 focus-visible:outline-offset-4">Ubicación<span class="sr-only"> (abre Google Maps en una pestaña nueva)</span></a></li>
+            <li><a href="#cursos" class="hover:text-[#20dadd] focus-visible:outline-2 focus-visible:outline-offset-4">Nuestros cursos</a></li>
+          </ul>
+        </nav>
+        <nav id="informacion-contacto" tabindex="-1" aria-labelledby="footer-contacto" class="footer__columna scroll-mt-8">
+          <h2 id="footer-contacto" class="mb-5 text-lg font-bold">Contacto</h2>
+          <ul class="space-y-3 text-sm">
+            <li class="leading-relaxed text-stone-300">Col. Las Brisas, San Pedro Sula, Honduras</li>
+            <li><a href="mailto:nramirezpersonal@yahoo.com" class="break-all hover:text-[#20dadd] focus-visible:outline-2 focus-visible:outline-offset-4">nramirezpersonal@yahoo.com</a></li>
+            <li><a href="#cursos" class="hover:text-[#20dadd] focus-visible:outline-2 focus-visible:outline-offset-4">Servicios</a></li>
+          </ul>
+        </nav>
+        <a href="#inicio" aria-label="Coffee Cracks Academy, ir al inicio" class="footer__marca flex flex-col items-center self-start rounded text-center focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#20dadd]">
+          <img src="Asset/Coffee%20Crack%27s%20Academy.jpg" alt="Coffee Cracks Academy" width="1600" height="896" loading="lazy" class="h-auto w-56 max-w-full" />
+        </a>
+        <div class="footer__redes sm:self-start lg:pt-4">
+          <h2 class="max-w-xs text-xs font-bold uppercase leading-6 tracking-[0.16em]">Sigue las novedades de<br />Coffee Cracks Academy</h2>
+          <a href="https://www.facebook.com/profile.php?id=61591554272446&amp;locale=es_LA" target="_blank" rel="noopener noreferrer" aria-label="Facebook de Coffee Cracks Academy (abre en una pestaña nueva)" class="mt-5 inline-flex min-h-11 items-center gap-3 rounded text-sm hover:text-[#20dadd] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#20dadd]">
+            <svg aria-hidden="true" viewBox="0 0 24 24" fill="currentColor" class="h-5 w-5"><path d="M22 12a10 10 0 1 0-11.56 9.88v-6.99H7.9V12h2.54V9.8c0-2.5 1.49-3.89 3.77-3.89 1.09 0 2.23.2 2.23.2v2.45h-1.26c-1.24 0-1.62.77-1.62 1.56V12h2.77l-.44 2.89h-2.33v6.99A10 10 0 0 0 22 12Z" /></svg>
+            Facebook
+          </a>
+          <a href="https://www.instagram.com/thecoffeecrackshn/" target="_blank" rel="noopener noreferrer" aria-label="Instagram de Coffee Cracks Academy (abre en una pestaña nueva)" class="footer__enlace mt-2 flex min-h-11 w-fit items-center gap-3 rounded text-sm hover:text-[#20dadd] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#20dadd]">
+            <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" class="h-5 w-5"><rect x="3" y="3" width="18" height="18" rx="5" /><circle cx="12" cy="12" r="4" /><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none" /></svg>
+            Instagram
+          </a>
+        </div>
+      </div>
+      <div class="footer__base mx-auto flex max-w-[1600px] items-center justify-between gap-6 border-t border-white/10 px-4 sm:px-6 lg:px-8 py-5">
+        <p class="text-xs text-stone-400">Developed by <a href="https://github.com/CJTorrez" class="rounded text-stone-200 underline underline-offset-4 hover:text-[#20dadd] focus-visible:outline-2 focus-visible:outline-offset-4">@CJTorrez</a></p>
       </div>
     </footer>
   </body>
 </html>
-
-
