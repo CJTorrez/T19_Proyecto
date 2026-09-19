@@ -19,7 +19,7 @@
         <nav aria-label="Navegación principal" class="header__navegacion flex flex-wrap justify-center gap-5 text-sm font-medium lg:justify-self-end">
           <a href="#inicio" class="rounded hover:text-[#20dadd] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#20dadd]">Inicio</a>
           <a href="#nosotros" class="rounded hover:text-[#20dadd] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#20dadd]">La academia</a>
-          <a href="#cursos" class="rounded hover:text-[#20dadd] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#20dadd]">Cursos</a>
+          <a href="cursos.html" class="rounded hover:text-[#20dadd] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#20dadd]">Cursos</a>
           <a href="#contacto" class="rounded hover:text-[#20dadd] focus-visible:outline-2 focus-visible:outline-offset-4">Contacto</a>
         </nav>
       </div>
@@ -35,7 +35,7 @@
               <p class="mb-5 text-xs font-bold uppercase tracking-[0.2em] text-[#ff9417]">Del origen a la taza</p>
               <h1 id="titulo" class="text-4xl font-semibold leading-tight tracking-tight sm:text-6xl">El buen café<br />empieza con<br /><span class="font-serif italic text-[#20dadd]">aprender.</span></h1>
               <p class="mt-6 max-w-md text-lg leading-relaxed text-stone-200">Un espacio para explorar tu pasión por el café y dar tus primeros pasos en el mundo del barismo.</p>
-              <div class="mt-8 flex justify-center"><a href="#cursos" class="inline-flex rounded-full bg-[#ff9417] px-6 py-3 text-sm font-semibold text-stone-950 transition hover:bg-[#ffad4f] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#20dadd]">Explorar los cursos</a></div>
+              <div class="mt-8 flex justify-center"><a href="cursos.html" class="inline-flex rounded-full bg-[#ff9417] px-6 py-3 text-sm font-semibold text-stone-950 transition hover:bg-[#ffad4f] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#20dadd]">Explorar los cursos</a></div>
             </div>
           </div>
         </div>
@@ -62,57 +62,34 @@
         </div>
       </section>
 
-      <section id="cursos" aria-labelledby="titulo-cursos" class="cursos mx-auto max-w-[1600px] px-4 sm:px-6 lg:px-8 py-16">
-        <div class="cursos__encabezado mb-8">
-          <p class="mb-3 text-xs font-bold uppercase tracking-[0.2em] text-[#ff9417]">Curso presencial · 2026–2027</p>
-          <h2 id="titulo-cursos" class="text-3xl font-semibold tracking-tight sm:text-4xl">Conviértete en un barista.</h2>
-          <p class="mt-4 max-w-2xl leading-relaxed text-stone-300">3 clases presenciales y 24 horas de capacitación. Cada clase tiene una duración de 8 horas, con un máximo de 5 participantes por día.</p>
-          <p class="mt-3 text-sm text-[#20dadd]">Impartido por Nelson Ramírez</p>
+      <section id="cursos" aria-labelledby="titulo-cursos" class="cursos mx-auto max-w-[1600px] px-4 py-16 sm:px-6 lg:px-8">
+        <div class="mb-8 max-w-2xl">
+          <p class="mb-4 text-xs font-bold uppercase tracking-[0.2em] text-[#ff9417]">Formación presencial · 2026–2027</p>
+          <h2 id="titulo-cursos" class="text-3xl font-semibold sm:text-4xl">Tu próxima taza comienza aquí.</h2>
+          <p class="mt-5 text-lg leading-relaxed text-stone-300">Explora nuestra formación en barismo y da el siguiente paso en tu pasión por el café.</p>
         </div>
-        <div class="cursos__lista grid gap-5 md:grid-cols-3">
-          <article class="curso flex flex-col rounded-2xl border border-[#946037]/50 bg-[#111415] p-6 lg:p-7">
-            <p class="curso__numero text-xs font-bold uppercase tracking-[0.16em] text-[#ff9417]">Clase 1</p>
-            <h3 class="curso__titulo mt-4 text-xl font-semibold">Fundamentos del barismo</h3>
-            <p class="curso__fecha mt-4 font-medium text-[#20dadd]"><time datetime="2026-12-12">12</time> y <time datetime="2026-12-13">13 de diciembre de 2026</time></p>
-            <p class="mt-2 text-xs text-stone-400">8 horas de capacitación por día</p>
-            <ul class="curso__temas my-6 list-disc space-y-2 pl-5 text-sm leading-relaxed text-stone-300 marker:text-[#ff9417]">
-              <li>Introducción al Barismo</li>
-              <li>Manejo del equipo</li>
-              <li>Calibración para Espresso</li>
-            </ul>
-            <p class="curso__precio mt-auto border-t border-white/10 pt-5 text-2xl font-semibold">L 1,800 <span class="block mt-1 text-xs font-normal text-stone-400">Precio individual · Clase 1</span></p>
+        <div class="cursos__resumen grid gap-6 md:grid-cols-3">
+          <article class="curso-resumen overflow-hidden rounded-2xl border border-[#946037]/40 bg-[#111415]">
+            <img src="Asset/curso-fundamentos.png" alt="Portafiltro, tamper y espresso junto a una máquina de café" width="1536" height="1024" loading="lazy" decoding="async" class="aspect-[3/2] w-full object-cover" />
+            <div class="p-6">
+              <p class="text-xs font-bold uppercase tracking-[0.16em] text-[#ff9417]">Clase 1</p>
+              <h3 class="mt-3 text-xl font-semibold">Fundamentos del barismo</h3>
+              <p class="mt-3 leading-relaxed text-stone-300">Conoce el equipo y aprende las bases para preparar un buen espresso.</p>
+            </div>
           </article>
-          <article class="curso flex flex-col rounded-2xl border border-[#946037]/50 bg-[#111415] p-6 lg:p-7">
-            <p class="curso__numero text-xs font-bold uppercase tracking-[0.16em] text-[#ff9417]">Clase 2</p>
-            <h3 class="curso__titulo mt-4 text-xl font-semibold">Espresso y bebidas</h3>
-            <p class="curso__fecha mt-4 font-medium text-[#20dadd]"><time datetime="2027-01-09">9</time> y <time datetime="2027-01-10">10 de enero de 2027</time></p>
-            <p class="mt-2 text-xs text-stone-400">8 horas de capacitación por día</p>
-            <ul class="curso__temas my-6 list-disc space-y-2 pl-5 text-sm leading-relaxed text-stone-300 marker:text-[#ff9417]">
-              <li>Bebidas a base de Espresso</li>
-              <li>Bebidas frutales</li>
-              <li>Smoothies</li>
-            </ul>
-            <p class="curso__precio mt-auto border-t border-white/10 pt-5 text-2xl font-semibold">L 1,500 <span class="block mt-1 text-xs font-normal text-stone-400">Precio individual · Clase 2</span></p>
+          <article class="curso-resumen overflow-hidden rounded-2xl border border-[#946037]/40 bg-[#111415]">
+            <img src="Asset/curso-bebidas.png" alt="Espresso, latte frío y smoothie de frutos rojos" width="1536" height="1024" loading="lazy" decoding="async" class="aspect-[3/2] w-full object-cover" />
+            <div class="p-6">
+              <p class="text-xs font-bold uppercase tracking-[0.16em] text-[#ff9417]">Clase 2</p>
+              <h3 class="mt-3 text-xl font-semibold">Espresso y bebidas</h3>
+              <p class="mt-3 leading-relaxed text-stone-300">Explora bebidas a base de espresso, opciones frutales y smoothies.</p>
+            </div>
           </article>
-          <article class="curso flex flex-col rounded-2xl border border-[#946037]/50 bg-[#111415] p-6 lg:p-7">
-            <p class="curso__numero text-xs font-bold uppercase tracking-[0.16em] text-[#ff9417]">Clase 3</p>
-            <h3 class="curso__titulo mt-4 text-xl font-semibold">Filtrado y arte latte</h3>
-            <p class="curso__fecha mt-4 font-medium text-[#20dadd]"><time datetime="2027-02-27">27</time> y <time datetime="2027-02-28">28 de febrero de 2027</time></p>
-            <p class="mt-2 text-xs text-stone-400">8 horas de capacitación por día</p>
-            <ul class="curso__temas my-6 list-disc space-y-2 pl-5 text-sm leading-relaxed text-stone-300 marker:text-[#ff9417]">
-              <li>Métodos de filtrado</li>
-              <li>Arte Latte — Clase 1</li>
-            </ul>
-            <p class="curso__precio mt-auto border-t border-white/10 pt-5 text-2xl font-semibold">L 1,300 <span class="block mt-1 text-xs font-normal text-stone-400">Precio individual · Clase 3</span></p>
-          </article>
-        </div>
-        <div class="cursos__paquete mt-6 flex flex-col gap-6 rounded-2xl border border-[#ff9417]/50 bg-[#ff9417]/10 p-6 sm:flex-row sm:items-center sm:justify-between lg:p-8">
-          <div>
-            <h3 class="text-lg font-semibold">Precio especial por las 3 clases</h3>
-            <p class="mt-2 text-4xl font-bold text-[#ff9417]">L 4,000</p>
-            <p class="mt-3 max-w-xl text-sm leading-relaxed text-stone-300">Los precios individuales aplican cuando se toma cada clase por separado. Cupos limitados: máximo 5 personas por día.</p>
+          <div class="cursos__ver-mas flex flex-col items-center justify-center rounded-2xl border border-[#946037]/40 bg-[#111415] px-6 py-12 text-center">
+            <h3 class="text-2xl font-semibold">Encuentra tu próximo curso</h3>
+            <p class="mt-4 max-w-xs leading-relaxed text-stone-300">Consulta la programación completa y descubre todo lo que puedes aprender.</p>
+            <a href="cursos.html" class="mt-6 inline-flex min-h-11 items-center justify-center rounded-full bg-[#ff9417] px-6 py-3 text-sm font-semibold text-stone-950 hover:bg-[#ffad4f] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#20dadd]">Ver fechas, precios y todos los cursos</a>
           </div>
-          <a href="mailto:nramirezpersonal@yahoo.com?subject=Consulta%20sobre%20el%20curso%20de%20barismo%202026-2027" class="cursos__consulta inline-flex min-h-11 shrink-0 items-center justify-center rounded-full bg-[#ff9417] px-6 py-3 text-sm font-semibold text-stone-950 hover:bg-[#ffad4f] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#20dadd]">Consultar y reservar</a>
         </div>
       </section>
 </main>
@@ -124,7 +101,7 @@
           <ul class="space-y-3 text-sm">
             <li><a href="#nosotros" class="hover:text-[#20dadd] focus-visible:outline-2 focus-visible:outline-offset-4">La academia</a></li>
             <li><a href="https://www.google.com/maps/search/?api=1&amp;query=Colonia%20Las%20Brisas%2C%20San%20Pedro%20Sula%2C%20Honduras" target="_blank" rel="noopener noreferrer" class="hover:text-[#20dadd] focus-visible:outline-2 focus-visible:outline-offset-4">Ubicación<span class="sr-only"> (abre Google Maps en una pestaña nueva)</span></a></li>
-            <li><a href="#cursos" class="hover:text-[#20dadd] focus-visible:outline-2 focus-visible:outline-offset-4">Nuestros cursos</a></li>
+            <li><a href="cursos.html" class="hover:text-[#20dadd] focus-visible:outline-2 focus-visible:outline-offset-4">Nuestros cursos</a></li>
           </ul>
         </nav>
         <nav id="informacion-contacto" tabindex="-1" aria-labelledby="footer-contacto" class="footer__columna scroll-mt-8">
@@ -132,7 +109,7 @@
           <ul class="space-y-3 text-sm">
             <li class="leading-relaxed text-stone-300">Col. Las Brisas, San Pedro Sula, Honduras</li>
             <li><a href="mailto:nramirezpersonal@yahoo.com" class="break-all hover:text-[#20dadd] focus-visible:outline-2 focus-visible:outline-offset-4">nramirezpersonal@yahoo.com</a></li>
-            <li><a href="#cursos" class="hover:text-[#20dadd] focus-visible:outline-2 focus-visible:outline-offset-4">Servicios</a></li>
+            <li><a href="cursos.html" class="hover:text-[#20dadd] focus-visible:outline-2 focus-visible:outline-offset-4">Servicios</a></li>
           </ul>
         </nav>
         <a href="#inicio" aria-label="Coffee Cracks Academy, ir al inicio" class="footer__marca flex flex-col items-center self-start rounded text-center focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#20dadd]">
