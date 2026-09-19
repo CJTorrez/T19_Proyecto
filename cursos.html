@@ -11,12 +11,15 @@
   <body class="bg-[#070809] font-sans text-stone-100 antialiased">
     <a href="#contenido" class="sr-only focus:not-sr-only focus:absolute focus:z-10 focus:bg-[#111415] focus:p-4">Saltar al contenido</a>
     <header class="header relative z-20 border-b border-[#946037]/35 bg-[#070809]">
-      <div class="header__contenido mx-auto grid max-w-[1600px] items-center justify-items-center gap-2 px-4 py-2 sm:px-6 lg:grid-cols-[1fr_auto_1fr] lg:px-8">
+      <div class="header__contenido mx-auto grid grid-cols-[1fr_auto_1fr] max-w-[1600px] items-center justify-items-center gap-2 px-4 py-2 sm:px-6 lg:grid-cols-[1fr_auto_1fr] lg:px-8">
         <p class="header__nombre hidden justify-self-start text-xl font-bold tracking-tight text-white lg:block">Coffee <span class="text-[#ff9417]">Cracks</span><span class="block text-xs font-medium uppercase tracking-[0.25em] text-[#20dadd]">Academy</span></p>
-        <a href="index.html#inicio" aria-label="Coffee Cracks Academy, ir al inicio" class="header__icono flex h-20 w-24 items-center justify-center focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#20dadd] lg:h-20 lg:w-28">
+        <a href="index.html#inicio" aria-label="Coffee Cracks Academy, ir al inicio" class="header__icono col-start-2 row-start-1 justify-self-center flex h-20 w-24 items-center justify-center focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#20dadd] lg:h-20 lg:w-28">
           <img src="Asset/Coffee%20Crack%27s%20Academy.png" alt="Coffee Cracks Academy, logo con letras azules" class="h-full w-full object-contain" />
         </a>
-        <nav aria-label="Navegación principal" class="header__navegacion flex flex-wrap justify-center gap-5 text-sm font-medium lg:justify-self-end">
+                <button type="button" aria-label="Abrir menú de navegación" aria-expanded="false" aria-controls="menu-principal" class="header__boton col-start-1 row-start-1 inline-flex h-11 w-11 items-center justify-center justify-self-start rounded-lg border border-[#946037]/50 text-[#ff9417] hover:bg-white/10 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#20dadd] lg:hidden">
+          <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="h-6 w-6"><path data-menu-open d="M4 6h16M4 12h16M4 18h16"/><path data-menu-close d="m6 6 12 12M6 18 18 6" class="hidden"/></svg>
+        </button>
+<nav id="menu-principal" aria-label="Navegación principal" class="header__navegacion col-span-3 hidden w-full flex-col gap-5 border-t border-[#946037]/35 py-5 text-sm font-medium lg:col-span-1 lg:col-start-3 lg:row-start-1 lg:flex lg:w-auto lg:flex-row lg:flex-wrap lg:justify-center lg:justify-self-end lg:border-0 lg:py-0">
           <a href="index.html#inicio" class="rounded hover:text-[#20dadd] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#20dadd]">Inicio</a>
           <a href="index.html#nosotros" class="rounded hover:text-[#20dadd] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#20dadd]">La academia</a>
           <a href="cursos.html" aria-current="page" class="text-[#20dadd] rounded hover:text-[#20dadd] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#20dadd]">Cursos</a>
@@ -162,5 +165,6 @@
         <p class="text-xs text-stone-400">Developed by <a href="https://github.com/CJTorrez" class="rounded text-stone-200 underline underline-offset-4 hover:text-[#20dadd] focus-visible:outline-2 focus-visible:outline-offset-4">@CJTorrez</a></p>
       </div>
     </footer>
+    <script src="menu.js" defer></script>
   </body>
 </html>
